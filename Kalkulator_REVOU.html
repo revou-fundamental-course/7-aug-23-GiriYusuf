@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Kalkulator_REVOU.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+<body>
+
+    <header>
+        <h2 class="Task">Assignment Kalkulator Segitiga</h2>
+        <nav class="pilih">
+            <button class="popup-Luas">Hitung Luas</button>
+            <button class="popup-Keliling">Hitung Keliling</button>
+        </nav>
+    </header>
+
+    <div class="popup-1">
+        <span class="icon-close1">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="input-L">
+            <h2>LUAS SEGITIGA</h2>
+            <form id="popup-L">
+                <div class="inputbox">
+                    <input type="text" id="alas">
+                    <label>Input Alas</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="tinggi">
+                    <label>Input Tinggi</label>
+                </div>
+                <button type="button" onclick="hitungLuas()" class="hitung-luas">HITUNG</button><br>
+                <button type="button" onclick="resetLuas()" class="reset-luas">RESET</button><br>
+                <p id="hasil-luas"></p>
+            </form>
+        </div>
+    </div>    
+
+    <div class="popup-2">
+        <span class="icon-close2">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="input-K">
+            <h2>KELILING SEGITIGA</h2>
+            <form id="popup-K">
+                <div class="inputbox">
+                    <input type="text" id="A">
+                    <label>Input Sisi A</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="B">
+                    <label>Input Sisi B</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="C">
+                    <label>Input Sisi C</label>
+                </div>
+                <button type="button" onclick="hitungKeliling()" class="hitung-keliling">HITUNG</button><br>
+                <button type="button" onclick="resetKeliling()" class="reset-keliling">RESET</button><br>
+                <p id="hasil-keliling"></p>
+            </form>
+        </div>
+    </div>    
+
+    <script src="js/Kalkulator_REVOU.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
