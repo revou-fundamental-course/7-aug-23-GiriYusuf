@@ -17,10 +17,14 @@ ButtonKeliling.addEventListener('click',()=> {
 
 iconClose1.addEventListener('click', ()=> {
       popup1.classList.remove('active-popup');
+      document.getElementById("popup-L").reset()
+      document.getElementById("hasil-luas").innerHTML = ""
 });
 
 iconClose2.addEventListener('click', ()=> {
       popup2.classList.remove('active-popup');
+      document.getElementById("popup-K").reset()
+      document.getElementById("hasil-keliling").innerHTML = ""
 });
 
 
@@ -28,7 +32,7 @@ function hitungLuas() {
       var alas = document.getElementById("alas").value
       var tinggi = document.getElementById("tinggi").value
       var luas = 0.5 * alas * tinggi
-      document.getElementById("hasil-luas").innerHTML = "Hasil nya adalah: " + luas
+      document.getElementById("hasil-luas").innerHTML = "Hasil nya adalah: " + luas 
 }
   
 function resetLuas() {
